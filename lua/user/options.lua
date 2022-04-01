@@ -6,7 +6,7 @@ local options = {
   conceallevel = 0,                        -- so that `` is visible in markdown files
   fileencoding = "utf-8",                  -- the encoding written to a file
   hlsearch = true,                         -- highlight all matches on previous search pattern
-  ignorecase = false,                      -- RESPECT case in search patterns
+  ignorecase = true,                       -- IGNORE case in search patterns
   mouse = "",                              -- DISALLOW the mouse to be used in neovim
   pumheight = 10,                          -- pop up menu height
   showmode = false,                        -- we don't need to see things like -- INSERT -- anymore
@@ -49,4 +49,9 @@ vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 vim.cmd [[
   nnoremap / /\v
   vnoremap / /\v
+]]
+
+-- Recognize specific file names as having a certain language's syntax
+vim.cmd [[
+    autocmd BufNewFile,BufRead Jenkinsfile set syntax=groovy
 ]]

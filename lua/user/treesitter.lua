@@ -4,9 +4,32 @@ if not status_ok then
 end
 
 configs.setup {
-  ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  -- Refer to docs here: https://github.com/nvim-treesitter/nvim-treesitter#modules
+
+  ensure_installed = {  -- list of language parser names, or "all"
+    "bash",
+    "c",
+    "cpp",
+    "css",
+    "dockerfile",
+    "go",
+    "html",
+    "java",
+    "javascript",
+    "json",
+    "lua",
+    "make",
+    "perl",
+    "php",
+    "python",
+    "ruby",
+    "rust",
+    "toml",
+    "typescript",
+    "yaml",
+  },
   sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
-  ignore_install = { "" }, -- List of parsers to ignore installing
+  ignore_install = { "" }, -- List of parsers to ignore installing (for "all")
   autopairs = {
     enable = true,
   },

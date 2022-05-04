@@ -5,8 +5,26 @@ configs.setup {
     -- Refer to docs here: https://github.com/nvim-treesitter/nvim-treesitter#modules
 
     ensure_installed = { -- list of language parser names, or "all"
-        'bash', 'c', 'cpp', 'css', 'dockerfile', 'go', 'html', 'java', 'javascript', 'json', 'lua', 'make', 'perl',
-        'php', 'python', 'ruby', 'rust', 'toml', 'typescript', 'yaml',
+        'bash',
+        'c',
+        'cpp',
+        'css',
+        'dockerfile',
+        'go',
+        'html',
+        'java',
+        'javascript',
+        'json',
+        'lua',
+        'make',
+        'perl',
+        'php',
+        'python',
+        'ruby',
+        'rust',
+        'toml',
+        'typescript',
+        'yaml',
     },
     sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
     ignore_install = {''}, -- List of parsers to ignore installing (for "all")

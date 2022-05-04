@@ -1,3 +1,4 @@
+-- Available language servers: https://github.com/williamboman/nvim-lsp-installer#available-lsps
 local desired_language_servers = {
     'bashls', -- Bash
     'intelephense', -- PHP

@@ -1,4 +1,5 @@
 local desired_language_servers = {
+    "bashls", -- Bash
     "intelephense", -- PHP
     "jedi_language_server", -- Python
     "jsonls", -- JSON

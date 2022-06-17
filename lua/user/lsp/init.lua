@@ -3,7 +3,7 @@ local desired_language_servers = {
     'bashls', -- Bash
     'intelephense', -- PHP
     'jdtls', -- Java
-    'jedi_language_server', -- Python
+    'pyright', -- Python
     'jsonls', -- JSON
     'sumneko_lua', -- Lua
     'yamlls', -- YAML

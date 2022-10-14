@@ -9,13 +9,17 @@ local desired_language_servers = {
     'yamlls', -- YAML
 }
 
-local installer_status_ok, lsp_installer = pcall(require, 'nvim-lsp-installer')
-if not installer_status_ok then return end
+local mason_status_ok, mason = pcall(require, 'mason')
+if not mason_status_ok then return end
+mason.setup {
+    ui = {icons = {server_installed = '✓', server_pending = '➜', server_uninstalled = '✗'}},
+}
 
-lsp_installer.setup {
+local mason_lspconfig_status_ok, mason_lspconfig = pcall(require, 'mason-lspconfig')
+if not mason_lspconfig_status_ok then return end
+mason_lspconfig.setup {
     ensure_installed = desired_language_servers, -- ensure these servers are always installed
     automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
-    ui = {icons = {server_installed = '✓', server_pending = '➜', server_uninstalled = '✗'}},
 }
 
 local status_ok, lspconfig = pcall(require, 'lspconfig')

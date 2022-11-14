@@ -39,5 +39,6 @@ keymap('n', '<leader>rl', '<cmd>wall <bar> TestLast<cr>', opts)
 
 -- Misc
 keymap('n', '<leader>nh', '<cmd>nohlsearch<cr>', opts)
-keymap('n', '<leader>t', ':Format<cr>', opts)
-keymap('n', '<leader>be', ':BufExplorer<cr>', opts)
+keymap('n', '<leader>t', '<cmd>Format<cr>', opts)
+keymap('n', '<leader>be', '<cmd>BufExplorer<cr>', opts)
+keymap('n', '<C-t>', '<cmd>tabedit<cr>', opts)

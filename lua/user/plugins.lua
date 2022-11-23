@@ -41,7 +41,6 @@ return packer.startup(function(use)
     use 'kyazdani42/nvim-web-devicons'
     use 'kyazdani42/nvim-tree.lua'
     use 'tpope/vim-surround' -- Delete/change/add parentheses/quotes/XML-tags/much more with ease
-    use 'jeetsukumaran/vim-indentwise' -- Indent-based movement
     use 'jlanzarotta/bufexplorer' -- Easily switch between buffers
 
     -- Vimux and testing support

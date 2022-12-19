@@ -108,6 +108,5 @@ nvim_tree.setup {
         special_files = { "Cargo.toml", "Makefile", "README.md", "readme.md" }, -- List of filenames that gets highlighted with NvimTreeSpecialFile
     },
     respect_buf_cwd = true, -- will change cwd of nvim-tree to that of new buffer's when opening nvim-tree.
-    create_in_closed_folder = true, -- When creating files, sets the path of a file when cursor is on a closed folder to the parent folder when false, and inside the folder when true.
     trash = {cmd = 'trash', require_confirm = true},
 }

@@ -1,8 +1,19 @@
 # neovimconf
-My configuration for Neovim
 
-Most of this was _shamelessly_ stolen from:
-https://github.com/LunarVim/Neovim-from-scratch
+My configuration for Neovim, designed to work on top of [Kickstart](https://github.com/nvim-lua/kickstart.nvim).
 
-If you haven't watched already, this is a great series of videos to begin learning about Neovim configuration:
-https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ
+## How to Get Started
+
+1. clone https://github.com/nvim-lua/kickstart.nvim somewhere
+2. clone this repo somewhere else
+3. Link this repo into place: `ln -s ~/somewhere/else/neovimconf ~/.conf/nvim`
+4. Link Kickstart into place: `ln -s ~/somewhere/kickstart.nvim/init.lua ~/.conf/nvim/init.lua`
+5. Clear out any Neovim cache: `rm -rf ~/.local/share/nvim/`
+6. Start Neovim: `nvim`
+7. Install plugins (prepare yourself to ignore errors): `:PackerInstall`
+8. Close and reopen Neovim
+9. Enjoy!
+
+## Hmm... What?
+
+Read more at the Kickstart link at the top of this document.

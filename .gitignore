@@ -1,3 +1,7 @@
+# The whole point of this config is to be based of of Kickstart's init.lua
+# If that doesn't make sense, read the README.md...
+init.lua
+
 # Compiled Lua sources
 luac.out
 
@@ -42,5 +46,5 @@ lua/.luarc.json
 *.x86_64
 *.hex
 
-
+# Packer writes out this bit of code, but will regenerate it from your config
 plugin/packer_compiled.lua

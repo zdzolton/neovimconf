@@ -4,8 +4,8 @@ My configuration for Neovim, designed to work on top of [Kickstart](https://gith
 
 ## How to Get Started
 
-1. clone https://github.com/nvim-lua/kickstart.nvim somewhere
-2. clone this repo somewhere else
+1. Clone https://github.com/nvim-lua/kickstart.nvim somewhere
+2. Clone this repo somewhere else
 3. Link this repo into place: `ln -s ~/somewhere/else/neovimconf ~/.conf/nvim`
 4. Link Kickstart into place: `ln -s ~/somewhere/kickstart.nvim/init.lua ~/.conf/nvim/init.lua`
 5. Clear out any Neovim cache: `rm -rf ~/.local/share/nvim/`

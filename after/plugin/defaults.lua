@@ -86,8 +86,5 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
 -- Show diagnostics for line under the cursor
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
 
--- Unmap this from Kickstart (as I sometimes hold down space too long)
-vim.keymap.del('n', '<leader><space>')
-
 -- Instead, let's make a different keybind for searching buffers
 vim.keymap.set('n', '<leader>b', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })

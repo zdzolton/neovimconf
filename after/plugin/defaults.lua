@@ -90,5 +90,7 @@ vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
 -- Make diagnostics hints more readable with Solarized theme
 vim.cmd 'hi DiagnosticHint guifg=Gray'
 
--- Instead, let's make a different keybind for searching buffers
+-- Let's use a different keybind for searching buffers than Kickstart
+-- (Sometimes I hold down the spacebar for too long and trigger this by accident)
+vim.keymap.del('n', '<leader><space>')
 vim.keymap.set('n', '<leader>b', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })

@@ -2,6 +2,7 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- Set up my desired color theme
 vim.cmd [[
 	colorscheme solarized8_high
 	set background=light
@@ -27,7 +28,7 @@ keymap('n', '<leader>nh', '<cmd>nohlsearch<cr>', opts)
 -- Better window navigation
 keymap('n', '<C-h>', '<C-w>h', opts)
 keymap('n', '<C-j>', '<C-w>j', opts)
-keymap('n', '<C-k>', '<C-w>k', opts)
+keymap('n', '<C-k>', '<C-w>k', opts)  -- TODO: Sort out conflict with LSP "Signature Documentation" bind
 keymap('n', '<C-l>', '<C-w>l', opts)
 keymap('n', '<C-q>', '<cmd>q!<cr>', opts)
 
@@ -85,6 +86,9 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
 
 -- Show diagnostics for line under the cursor
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
+
+-- Make diagnostics hints more readable with Solarized theme
+vim.cmd 'hi DiagnosticHint guifg=Gray'
 
 -- Instead, let's make a different keybind for searching buffers
 vim.keymap.set('n', '<leader>b', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })

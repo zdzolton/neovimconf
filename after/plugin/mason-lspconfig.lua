@@ -5,7 +5,7 @@ local desired_language_servers = {
     'jdtls', -- Java
     'jsonls', -- JSON
     'pyright', -- Python
-    'sumneko_lua', -- Lua
+    'lua_ls', -- Lua
     'tsserver', -- TypeScript and JavaScript
     'yamlls', -- YAML
 }

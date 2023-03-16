@@ -61,6 +61,7 @@ local options = {
     signcolumn = 'yes', -- always show the sign column, otherwise it would shift the text each time
     wrap = true, -- wrap long lines
     colorcolumn = {'120'}, -- Show vertical ruler on column 120
+    textwidth = 120, -- Used for wrapping during text formatting
 }
 
 vim.opt.shortmess:append 'c'

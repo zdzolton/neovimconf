@@ -96,3 +96,11 @@ vim.cmd 'hi DiagnosticHint guifg=Gray'
 -- (Sometimes I hold down the spacebar for too long and trigger this by accident)
 vim.keymap.del('n', '<leader><space>')
 vim.keymap.set('n', '<leader>b', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
+
+-- Use some fun characters when displaying invisibles
+vim.opt.listchars = {
+	eol = '↲',
+	space = '⋅',
+	trail = '•',
+	tab = '⇄ ',
+}

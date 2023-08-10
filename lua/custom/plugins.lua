@@ -2,6 +2,9 @@ return function(use)
 	-- Solarized theme for my eyeballs
 	use"lifepillar/vim-solarized8"
 
+	-- Also, let's try this one
+	use 'Mofiqul/vscode.nvim'
+
 	-- For running tests from Neovim in tmux splits
 	use'preservim/vimux'
 	use'vim-test/vim-test'

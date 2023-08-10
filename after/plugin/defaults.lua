@@ -4,7 +4,8 @@ vim.g.maplocalleader = ' '
 
 -- Set up my desired color theme
 vim.cmd [[
-	colorscheme solarized8_high
+	colorscheme vscode
+	" colorscheme solarized8_high
 	set background=light
 ]]
 
